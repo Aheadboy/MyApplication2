@@ -3,6 +3,8 @@ package com.ljj.babycomingin100days.myapplication;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+
 import com.facebook.drawee.view.SimpleDraweeView;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Uri uri = Uri.parse("http://r1.ykimg.com/054104085274F02D6A0A40636C798A21");
         SimpleDraweeView draweeView = (SimpleDraweeView) findViewById(R.id.my_image_view);
-        draweeView.setImageURI(uri);
+        if(draweeView!=null){
+            draweeView.setImageURI(uri);
+        }
+        Log.d("ff","");
     }
 }
