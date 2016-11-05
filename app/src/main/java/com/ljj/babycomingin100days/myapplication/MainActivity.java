@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         SimpleDraweeView draweeView = (SimpleDraweeView) findViewById(R.id.my_image_view);
         if(draweeView!=null){//if without this as will warn you this may cau nullpointexpt//can you image this
             draweeView.setImageURI(uri);//unbilivable as
+            //what is pull?
         }
         Log.d("ff","");
     }
