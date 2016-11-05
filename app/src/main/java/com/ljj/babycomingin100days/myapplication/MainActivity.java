@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         Uri uri = Uri.parse("http://r1.ykimg.com/054104085274F02D6A0A40636C798A21");
         SimpleDraweeView draweeView = (SimpleDraweeView) findViewById(R.id.my_image_view);
         if(draweeView!=null){//if without this as will warn you this may cau nullpointexpt//can you image this
-            draweeView.setImageURI(uri);//unbilivable as
+            draweeView.setImageURI(uri);//unbilivable
         }
         Log.d("ff","");
     }
